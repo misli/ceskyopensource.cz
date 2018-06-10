@@ -76,7 +76,7 @@
             <div class="card-deck">
                 {% for company in site.data.companies %}
                     <div class="card col-4">
-                        <img class="card-img-top" src="/assets/logos/{{ company.logo }}" alt="{{ company.name }} logo">
+                        <img class="card-img-top" src="/assets/logos/{{ company.logo }}?v=0.1" alt="{{ company.name }} logo">
                         <div class="card-body">
                             Follow Devs on:
                             <a href="{{ company.devs_twitter }}">{{ company.devs_twitter }}</a>
