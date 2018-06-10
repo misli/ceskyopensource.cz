@@ -63,7 +63,7 @@
                 {% endfor %}
             </table>
 
-            <p class="mt-3 text-center">
+            <p class="mt-5 text-center">
                 <a href="https://github.com/TomasVotruba/ceskyopensource.cz/edit/master/_data/packages.yaml">
                     ➕ &nbsp;Add Your Free Package Too!
                 </a>
@@ -73,28 +73,19 @@
 
             <h2>Czech Companies that ❤ Open-Source</h2>
 
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th class="text-center">Company</th>
-                        <th class="text-center">Follow Devs on Twitter</th>
-                    </tr>
-                </thead>
+            <div class="card-deck">
                 {% for company in site.data.companies %}
-                    <tr>
-                        <td>
-                            <a href="{{ company.url }}">
-                                <img src="/assets/logos/{{ company.logo }}" alt="{{ company.name }} logo" width="200">
-                            </a>
-                        </td>
-                        <td>
+                    <div class="card col-4">
+                        <img class="card-img-top" src="/assets/logos/{{ company.logo }}" alt="{{ company.name }} logo">
+                        <div class="card-body">
+                            Follow Devs on:
                             <a href="{{ company.devs_twitter }}">{{ company.devs_twitter }}</a>
-                        </td>
-                    </tr>
+                        </div>
+                    </div>
                 {% endfor %}
-            </table>
+            </div>
 
-            <p class="mt-3 text-center">
+            <p class="mt-5 text-center">
                 <a href="https://github.com/TomasVotruba/ceskyopensource.cz/edit/master/_data/companies.yaml">
                     ➕ &nbsp;Add Your Open Company Too!
                 </a>
