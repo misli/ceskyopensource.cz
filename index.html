@@ -44,7 +44,7 @@
             <hr>
             -->
 
-            <h2>Brave Czech Company Open-Source Projects</h2>
+            <h2>Czech Company Open-Sourced Packages</h2>
 
             <table class="table table-striped" style="max-width: 35em; margin:auto;">
                 <thead>
@@ -74,6 +74,39 @@
             </table>
 
             <hr>
+
+            <h2>Czech Companies that ❤ Open-Source</h2>
+
+            <table class="table table-striped" style="max-width: 35em; margin:auto;">
+                <thead>
+                    <tr>
+                        <th class="text-center">Company</th>
+                        <th class="text-center">Dev Twitter</th>
+                    </tr>
+                </thead>
+                {% for company in site.data.companies %}
+                    <tr>
+                        <td>
+                            {{ company.logo}}
+                            images here!
+                        </td>
+                        <td>
+                            <a href="{{ company.url }}">{{ company.name }}</a>
+                        </td>
+                        <td>{{ company.devs_twitter }}</td>
+                    </tr>
+                {% endfor %}
+
+                <br>
+
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <a href="https://github.com/TomasVotruba/ceskyopensource.cz/edit/master/_data/companies.yaml">
+                            ➕ &nbsp;Add Your Open Company Too!
+                        </a>
+                    </td>
+                </tr>
+            </table>
 
             <footer class="text-center mt-5 mb-5">
                 Thanks for inspiration at <a href="http://www.remotephp.cz/">remotePHP.cz</a><br>

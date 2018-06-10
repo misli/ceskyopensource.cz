@@ -1,17 +1,14 @@
 -
     name: 'slevomat/coding-standard'
-    company_id: 1
     url: 'https://github.com/slevomat/coding-standard'
     description: 'Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks'
 
 -
     name: 'skrz/meta'
-    company_id: 2
     url: 'https://github.com/skrz/meta'
     description: 'Map from PHP arrays, JSON, XML and Protocol Buffers (protobuf) to objects and back'
 
 -
     name: 'peckadesign/Monitoring'
-    company_id: 3
     url: 'https://github.com/peckadesign/Monitoring'
     description: 'Monitoring na dostupnost webů, generování feedů, DNS, HTTPS atd.'
