@@ -36,7 +36,7 @@ table {
     max-width: 45em;
 }
 
-a:not(.btn), a:active:not(.btn), a:focus::not(.btn) {
+a:not(.btn), a:active:not(.btn), a:focus:not(.btn) {
     color: #000;
     text-decoration: underline;
 }
