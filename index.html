@@ -1,0 +1,81 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Český Open Source - Firmy, které se nebojí to pustit zadarmo ven</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif:300,400,600">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/assets/style.css?v=0.1">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">
+                Český Open Source - Firmy, které se nebojí to pustit zadarmo ven
+            </h1>
+
+            <p class="text-center">🐘 PHP friendly ❤️️</p>
+
+            <hr class="mt-5 mb-5">
+
+            <h2>What is Open-Source?</h2>
+
+            <p class="text-center">
+                A package released under <a href="https://choosealicense.com/licenses/mit/">MIT licence</a>. Usually placed on Github, downloadable via composer.
+            </p>
+
+            <hr>
+
+            <!--
+            <a href="#why-open-source-company-code">
+                <h2 id="why-open-source-company-code">Why Open-Source Company Code?</h2>
+            </a>
+
+            <p>
+                @todo - Shopsys post
+                @todo - Votruba post
+            </p>
+            <hr>
+            -->
+
+            <h2>Brave Czech Company Open-Source Projects</h2>
+
+            <table class="table table-striped" style="max-width: 35em; margin:auto;">
+                <thead>
+                    <tr>
+                        <th class="text-center">Project</th>
+                        <th class="text-center">Description</th>
+                    </tr>
+                </thead>
+                {% for package in site.data.packages %}
+                    <tr>
+                        <td>
+                            <a href="{{ package.url }}">{{ package.name }}</a>
+                        </td>
+                        <td>{{ package.description }}</td>
+                    </tr>
+                {% endfor %}
+
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <a href="https://github.com/TomasVotruba/ceskyopensource.cz/edit/master/_data/packages.yaml">
+                            ➕ &nbsp;Add Your Awesome Package Too!
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <footer class="text-center mt-5 mb-5">
+                Thanks for inspiration at <a href="http://www.remotephp.cz/">remotePHP.cz</a><br>
+                Found a typo? <a href="https://github.com/TomasVotruba/ceskyopensource.cz/edit/master/index.html">Edit this page</a>
+            </footer>
+        </div>
+    </body>
+</html>
