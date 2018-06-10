@@ -46,7 +46,7 @@
 
             <h2>Czech Company Open-Sourced Packages</h2>
 
-            <table class="table table-striped" style="max-width: 35em; margin:auto;">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th class="text-center">Project</th>
@@ -77,7 +77,7 @@
 
             <h2>Czech Companies that ❤ Open-Source</h2>
 
-            <table class="table table-striped" style="max-width: 35em; margin:auto;">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th class="text-center">Company</th>
@@ -87,13 +87,13 @@
                 {% for company in site.data.companies %}
                     <tr>
                         <td>
-                            {{ company.logo}}
-                            images here!
+                            <a href="{{ company.url }}">
+                                <img src="/assets/logos/{{ company.logo }}" alt="{{ company.name }} logo" width="100">
+                            </a>
                         </td>
                         <td>
-                            <a href="{{ company.url }}">{{ company.name }}</a>
+                            <a href="{{ company.devs_twitter }}">Follow Devs on Twitter</a>
                         </td>
-                        <td>{{ company.devs_twitter }}</td>
                     </tr>
                 {% endfor %}
 
