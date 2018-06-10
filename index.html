@@ -81,7 +81,7 @@
                 <thead>
                     <tr>
                         <th class="text-center">Company</th>
-                        <th class="text-center">Dev Twitter</th>
+                        <th class="text-center">Follow Devs on Twitter</th>
                     </tr>
                 </thead>
                 {% for company in site.data.companies %}
@@ -92,7 +92,11 @@
                             </a>
                         </td>
                         <td>
-                            <a href="{{ company.devs_twitter }}">Follow Devs on Twitter</a>
+                            {% if company.devs_twitter is defined %}
+                                <a href="{{ company.devs_twitter }}">{{ company.devs_twitter }}</a>
+                            {% else %}
+                                &ndash;
+                            {% endif %}
                         </td>
                     </tr>
                 {% endfor %}
