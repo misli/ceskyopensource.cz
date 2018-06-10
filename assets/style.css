@@ -36,12 +36,12 @@ table {
     max-width: 45em;
 }
 
-a, a:active, a:focus {
+a:not(.btn), a:active:not(.btn), a:focus::not(.btn) {
     color: #000;
     text-decoration: underline;
 }
 
-a:hover {
+a:hover:not(.btn) {
     color: #222;
     text-decoration: none;
 }
@@ -52,10 +52,6 @@ strong {
 
 .blockquote {
     font-size: 1.2em;
-}
-
-li {
-    line-height: 1.7em;
 }
 
 footer, footer a {
