@@ -1,13 +1,18 @@
 -
-    name: "Slevomat"
-    logo: "slevomat.png"
-    url: "https://slevomat.cz"
-    devs_twitter: "https://twitter.com/SlevomatLIVE"
+    name: "LMC"
+    logo: "lmc.png"
+    url: "https://www.lmc.eu/"
+    devs_twitter: "https://twitter.com/lmc_eu"
 -
     name: "Skrz"
     logo: "skrz.png"
     url: "https://skrz.cz"
     devs_twitter: "https://twitter.com/skrzczdev"
+-
+    name: "Slevomat"
+    logo: "slevomat.png"
+    url: "https://slevomat.cz"
+    devs_twitter: "https://twitter.com/SlevomatLIVE"
 -
     name: "PeckaDesign"
     logo: "peckadesign.png"

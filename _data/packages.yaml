@@ -1,13 +1,15 @@
 -
-    name: 'slevomat/coding-standard'
-    url: 'https://github.com/slevomat/coding-standard'
-    description: 'Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks'
-
+    name: 'lmc-eu/steward'
+    url: 'https://github.com/lmc-eu/steward'
+    description: 'PHP libraries that makes Selenium WebDriver + PHPUnit functional testing easy and robust'
 -
     name: 'skrz/meta'
     url: 'https://github.com/skrz/meta'
     description: 'Map from PHP arrays, JSON, XML and Protocol Buffers (protobuf) to objects and back'
-
+-
+    name: 'slevomat/coding-standard'
+    url: 'https://github.com/slevomat/coding-standard'
+    description: 'Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks'
 -
     name: 'peckadesign/Monitoring'
     url: 'https://github.com/peckadesign/Monitoring'
