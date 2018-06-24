@@ -14,3 +14,7 @@
     name: 'peckadesign/Monitoring'
     url: 'https://github.com/peckadesign/Monitoring'
     description: 'Monitoring na dostupnost webů, generování feedů, DNS, HTTPS atd.'
+-
+    name: 'leprikon-cz/leprikon'
+    url: 'https://github.com/leprikon-cz/leprikon'
+    description: 'Webový informační systém pro domy dětí, střediska volného času a další vzdělávací organizace'
